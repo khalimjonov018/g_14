@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<center>
+		<form>
+			<h1>Price: $<span id="Price">0</span></h1>
+			<h2>Rent a Car</h2>
+			<label for="CarSelect">	Chose the type of car</label><br><br>
+			<select  id="CarSelect" onchange="carPrice()" >
+				<option value="chevrolet">Chevrolet</option>
+				<option value="byd">BYD</option>
+				<option value="ferrari">Ferrari</option>
+				<option value="bmw">BMW</option>
+				<option value="mercedes">Mercedes</option>
+				<option value="kia">KIA</option>
+			</select>
+			<br>
+			<br>
+			<input type="number" placeholder="Days" value="1" id="days" onchange="carPrice()" >
+			<br>
+			<br>
+			<label for="Tanifovka">
+				<input type="checkbox" id="Tonirovka" onchange="carPrice()">
+				Tanifovka $10
+			</label>
+			<br>
+			<br>
+			<label for="registr">
+				<input type="checkbox" id="registr" onchange="carPrice()">
+				registr $5
+			</label>
+			<br>
+			<br>
+			<label for="auto">
+				<input type="radio" name="transport" id="auto" checked value="auto" onchange="carPrice()">
+                 avtomat karopka
+			</label>
+			<br>
+			<br>
+			<label for="mechanic">
+				<input type="radio" name="transport" id="mechanic" value="mach" onchange="carPrice()">
+				mexanika karopka
+			</label>
+		</form>
+	</center>
+	<script src="./js/main.js"></script>
+</body>
+</html>

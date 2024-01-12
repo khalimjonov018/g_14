@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- Roboto font -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- TW Elements styles-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+		/>
+
+		<!-- Tailwind CSS config -->
+		<script src="https://cdn.tailwindcss.com/3.3.0"></script>
+		<script>
+			tailwind.config = {
+				darkMode: "class",
+				theme: {
+					fontFamily: {
+						sans: ["Roboto", "sans-serif"],
+						body: ["Roboto", "sans-serif"],
+						mono: ["ui-monospace", "monospace"],
+					},
+				},
+				corePlugins: {
+					preflight: false,
+				},
+			};
+		</script>
+	</head>
+	<body>
+		<h1 class="text-[#ff0000] text-3xl">hello</h1>
+
+		<!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+		<select data-te-select-init data-te-select-filter="true">
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+			<option value="4">Four</option>
+			<option value="5">Five</option>
+			<option value="6">Six</option>
+			<option value="7">Seven</option>
+			<option value="8">Eight</option>
+			<option value="9">Nine</option>
+			<option value="10">Ten</option>
+		</select>
+		<!-- TW Elements JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+	</body>
+</html>

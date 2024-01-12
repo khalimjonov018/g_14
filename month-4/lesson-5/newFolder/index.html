@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bootstrap Site</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+			integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<style>
+		.row > * {
+			padding: 0;
+		}
+		.form-control {
+			border-radius: 0;
+		}
+		.input-group > .btn-success {
+			border-radius: 0;
+		}
+	</style>
+	<body class="bg-dark">
+		<!-- todos -->
+		<div class="container">
+			<div class="row bg">
+				<div class="col-md-8 mx-auto bg-light">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">An item</li>
+						<li class="list-group-item">A second item</li>
+						<li class="list-group-item">A third item</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Todo forms -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 mx-auto">
+					<div class="input-group ">
+						<input type="text" class="form-control" placeholder="task" aria-label="task" />
+						<span class="input-group-text">Time</span>
+						<input
+							type="datetime-local"
+							class="form-control"
+							placeholder="Server"
+							aria-label="Server"
+						/>
+						<button class="btn btn-success">Add todo</button>
+					</div>
+				</div>
+			</div>
+		</div>
+  	<!-- todos -->
+   <div class="container">
+    <div class="row bg">
+     <div class="col-md-8 mx-auto bg-light">
+      <ul class="list-group list-group-flush">
+       <li class="list-group-item">An item</li>
+       <li class="list-group-item">A second item</li>
+       <li class="list-group-item">A third item</li>
+      </ul>
+     </div>
+    </div>
+   </div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

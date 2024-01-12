@@ -1,0 +1,48 @@
+@mixin button($color: white, $bg: black, $bordercolor:black) {
+    display: inline-block;
+    text-decoration: none;
+    color: $color;
+    background-color: $bg;
+    border: 1px solid $bordercolor;
+    border-radius: 10px;
+    padding: 12px 25px;
+    transition: all .3s ease;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  @mixin mobile(){
+    @media screen and (max-width: 767px) {
+        @content;
+        
+    }
+  }
+  @mixin tablet(){
+@media screen and (max-width: 1024)and (min-width: 768){
+        @content;
+    }
+  }
+
+  @mixin media($mix, $max){
+    @media screen and (max-width: $max) and (min-width: $mix){
+        @content;
+    }
+  }
+//   @mixin headeing(){
+//     font-size: 30px;
+//     font-weight: bold;
+//     margin-bottom: 30px;
+//     font-family: sans-serif;
+//     @content
+//   }
+
+
+//   h1{
+//     @include headeing(){
+//         background-color: rgb(139, 196, 15);
+//         font-size: 40px;
+//         color: aqua;
+//     }
+//   }

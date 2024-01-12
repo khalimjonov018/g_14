@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.kubik{
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+    margin-top: 360px;
+    margin-left: 40%;
+    animation-name: kubik;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes kubik {
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+       transform: rotate(360deg);
+    }
+}   

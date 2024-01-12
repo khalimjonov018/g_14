@@ -1,0 +1,47 @@
+.bottom {
+  .bottom__wrapp {
+    display: flex;
+    justify-content: space-between;
+    @include tablet() {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include mobile(){
+        flex-direction: column;
+    }
+    .bottom__info {
+      & h3 {
+        color: #070f18;
+        font-family: "Poppins" sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        max-width: 152px;
+        @include tablet() {
+          margin-top: 82px;
+          margin-bottom: 30px;
+          color: #070f18;
+          text-align: center;
+          font-family: "Poppins" sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          max-width: 100%;
+        }
+        @include mobile(){
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+      }
+    }
+    .bottom__img {
+      display: flex;
+      gap: 30px;
+      @include mobile(){
+        flex-wrap: wrap;
+    }
+    }
+  }
+}

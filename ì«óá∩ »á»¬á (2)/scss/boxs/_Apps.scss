@@ -1,0 +1,79 @@
+.apps {
+	margin-top: 300px;
+	width: 100%;
+	height: 360px;
+	background: #495567;
+	&__controls {
+		display: flex;
+		justify-content: space-between;
+  padding: 102px 0 0 0;
+  @include tablet(){
+   flex-direction: column;
+   align-items: center;
+  }
+  @include mobile(){
+   flex-direction: column;
+   align-items: center;
+  }
+		& h2 {
+			color: #fff;
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 48px; /* 100% */
+			letter-spacing: -2.143px;
+			width: 415px;
+   @include tablet(){
+    width: 457px;
+    text-align: center;
+    margin-bottom: 40px;
+   }
+   @include mobile(){
+    width: 311px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+   }
+		}
+		.apps__list {
+			display: flex;
+   gap: 18px;
+			.apps__list-item {
+				display: flex;
+				align-items: center;
+				width: 169px;
+				height: 56px;
+				border-radius: 4px;
+				background: #e5ecf4;
+    padding: 8px 16px;
+    gap: 12px;
+    @include tablet(){
+     margin-bottom: 60px;
+    }
+    @include mobile(){
+     margin-bottom: 60px;
+    }
+				.apps__inner-texts {
+					& p {
+						color: #495567;
+						font-size: 10px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: normal;
+						letter-spacing: -0.446px;
+
+					}
+					& h4 {
+						color: #495567;
+						font-size: 20px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: 24px; /* 120% */
+						letter-spacing: -0.893px;
+
+					}
+				}
+			}
+		}
+	}
+}

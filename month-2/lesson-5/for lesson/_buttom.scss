@@ -1,0 +1,19 @@
+
+.btn {
+  @include button(orange, purple, blue);
+  
+  @include mobile(){
+    background-color: palegoldenrod;
+  }
+  @include tablet(){
+    background-color: purple;
+  }
+  @include media(900px, 1200px){
+    background-color: alpha($color: #000000)
+  }
+}
+.btn2 {
+  @include button();
+  background-color: orange;
+  border: 1px solid orange;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<main>
+			<!-- ! Photo-Swiper section -->
+			<section class="photo__swiper" >
+				<div class="container">
+					<h2 class="photo__swiper-title">Фотоотчет с последних <span>мероприятий</span></h2>
+
+					<div class="photo__swiper-wrapper">
+						<!-- Swiper slide -->
+						<div class="swiper mySwiper">
+							<!---->
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="./img/swiper__img.svg" alt="obida" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/swiper__img-2.svg" alt="obida" />
+								</div>
+							</div>
+						</div>
+						<!-- Enf of Swiper slide -->
+
+						<!-- Photo swiper content -->
+						<div class="photo__swiper-content">
+							<span class="inner__data">24.09.2023</span>
+							<h3>CAEx <span>Mebel and Decor 2023</span></h3>
+							<p>
+								С 22-24 сентября проводилась первая международная выставка CAEx Mebel & Decor 2023.
+								Эта выставка была посвящена сфере мебели, декора и других элементов для дома.
+							</p>
+							<div class="swiper-content__btn">
+								<button class="content__btns prev"></button>
+								<button class="content__btns next"></button>
+							</div>
+						</div>
+						<!-- End of photo swiper content -->
+					</div>
+				</div>
+			</section>
+			<!-- ! End of Photo-Swiper section -->
+		</main>
+		<!-- animation section started -->
+		<section class="animaton__section">
+			<div class="container animation__wrapp">
+				<h2>Наши <span>партнеры</span></h2>
+				<ul class="animatio__list">
+					<li class="animation__list-item">
+						<img src="./img/animation__logo__img.svg" alt="logotip text">
+					</li>
+					<li class="animation__list-item">
+						<img src="./img/animation__logo__img.svg" alt="logotip text">
+					</li>
+					<li class="animation__list-item">
+						<img src="./img/animation__logo__img.svg" alt="logotip text">
+					</li>
+					<li class="animation__list-item">
+						<img src="./img/animation__logo__img.svg" alt="logotip text">
+					</li>
+					<li class="animation__list-item">
+						<img src="./img/animation__logo__img.svg" alt="logotip text">
+					</li>
+					<li class="animation__list-item">
+						<img src="./img/animation__logo__img.svg" alt="logotip text">
+					</li>
+				</ul>
+			</div>
+			<!-- animation section finished -->
+		</section>
+		<!-- plan home section started -->
+		<section class="plan__home"  >
+			<div class="container">
+				<h2 class="plan__home-title">План <span>комплекса</span></h2>
+				<div class="plan__home-controls">
+					<p>1 этаж</p>
+					<!-- Swiper -->
+					<div class="swiper mySwiper-two">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="./img/plan__home.jpg" alt="home map" /></div>
+							<div class="swiper-slide"><img src="./img/plan__home.jpg" alt="home map" /></div>
+						</div>
+
+					</div>
+					<div class="plan__home-btn">
+						<button class="homeBtn prev"></button>
+						<button class="homeBtn next"></button>
+					</div>
+				</div>
+			</div>
+			<!-- plan home section finished -->
+		</section>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- Main JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>

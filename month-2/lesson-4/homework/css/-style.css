@@ -1,0 +1,18 @@
+.nav {
+  margin-top: 44px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.nav__wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=-style.css.map */

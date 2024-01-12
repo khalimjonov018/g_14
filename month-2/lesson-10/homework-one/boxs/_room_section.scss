@@ -1,0 +1,63 @@
+.room {
+  .room__controls {
+    & h3 {
+      color: #706458;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Merriweather;
+      font-size: 55px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 60px; /* 109.091% */
+      letter-spacing: -0.6px;
+      margin-top: 64px;
+      margin-bottom: 48px;
+    }
+    .room__info {
+      display: flex;
+      gap: 24px;
+      @include tablet(){
+        flex-direction: column;
+      }
+      & p {
+        color: var(--Brown-Light, rgba(112, 100, 88, 0.9));
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Varta;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 138.889% */
+        width: 165px;
+      }
+    }
+    .room__span {
+      display: flex;
+      gap: 23px;
+      margin-top: 48px;
+      .room__span-1 {
+        color: var(--Brown-Light, rgba(112, 100, 88, 0.9));
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Varta;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 138.889% */
+        width: 165px;
+      }
+      .room__span-2 {
+        width: 100%;
+        color: var(--Terracotta, #a06056);
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: "Karla" sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px; /* 125% */
+        letter-spacing: 0.3px;
+        background-image: url(/images/icon__arrow.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center left 50px;
+      }
+    }
+  }
+}

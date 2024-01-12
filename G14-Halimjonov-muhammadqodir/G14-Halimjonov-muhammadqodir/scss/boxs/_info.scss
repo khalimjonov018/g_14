@@ -1,0 +1,109 @@
+.info {
+  margin-top: 160px;
+  margin-bottom: 147px;
+
+  .info__list {
+    position: relative;
+    display: flex;
+    gap: 32px;
+    @include tablet() {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include mobile() {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      //  width: 974px;
+      //   height: 15px;
+      //  background-color: #848991;
+      //  top: 50px;
+      //   @include tablet() {
+      //     content: none;
+      //     border-left: 1px soldi #495567;
+      //     height: 100%;
+      //   }
+    }
+    .info__list-item {
+      @include mobile() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @include tablet() {
+        display: flex;
+        gap: 80px;
+
+        & img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      & h3 {
+        color: #495567;
+        font-family: "Space Mono" sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 116.667% */
+        letter-spacing: -1.071px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        @include tablet() {
+          color: #495567;
+          font-family: "Space Mono" sans-serif;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 28px; /* 116.667% */
+          letter-spacing: -1.071px;
+        }
+        @include mobile() {
+          color: #495567;
+          text-align: center;
+          font-family: "Space Mono" sans-serif;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 28px; /* 140% */
+          letter-spacing: -0.893px;
+        }
+      }
+      & p {
+        color: #939caa;
+        font-family: "Lexend Deca" sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 166.667% */
+        width: 330px;
+        @include tablet() {
+          color: #939caa;
+          font-family: "Lexend Deca" sans-serif;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px; /* 166.667% */
+          width: 400px;
+        }
+        @include mobile() {
+          color: #939caa;
+          text-align: center;
+          font-family: "Lexend Deca" sans-serif;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px; /* 166.667% */
+          width: 311px;
+        }
+      }
+    }
+  }
+}

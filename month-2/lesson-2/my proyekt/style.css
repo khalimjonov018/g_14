@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: inter sans-serif;
+}
+.nav {
+  margin-top: 30px;
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.nav__wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+.nav__list-item:not(:first-child) {
+  color: var(--text-gray-900, #18191f);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.nav__list-item a {
+  color: var(--text-gray-900, #18191f);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.nav__btn {
+  display: flex;
+  gap: 34px;
+}

@@ -1,0 +1,76 @@
+.animaton__section {
+	padding-block: 384px 384px;
+	background-color: #C39270;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+ @include media(768px, 1300px) {
+  padding-block: 285px 285px;
+ }
+ @include mobile() {
+  padding-block: 185px 185px;
+ }
+	.animation__wrapp {
+		& h2 {
+			color: $white;
+			text-align: center;
+			font-size: 96px;
+			font-weight: 400;
+			@include media(768px, 1300px) {
+				font-size: 66px;
+			}
+			@include mobile() {
+				font-size: 33px;
+			}
+			& span {
+				font-family: "Apoc Normal";
+				font-style: italic;
+				@include media(768px, 1300px) {
+					font-size: 66px;
+				}
+				@include mobile() {
+					font-size: 33px;
+				}
+			}
+		}
+		.animatio__list {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			overflow: hidden;
+			margin-top: 120px;
+   @include media(768px, 1300px) {
+    gap: 50px;
+   }
+   @include mobile() {
+    gap: 40px;
+   }
+			.animation__list-item {
+				display: inline-block;
+				& img {
+					color: $white;
+					font-family: "Montserrat";
+					font-size: 48px;
+					font-weight: 800;
+					text-transform: uppercase;
+					opacity: 0.5;
+					white-space: nowrap;
+					animation: animation__paragraph 1.3s linear infinite;
+					@include media(768px, 1300px) {
+						font-size: 38px;
+					}
+					@include mobile() {
+						font-size: 25px;
+					}
+				}
+				@keyframes animation__paragraph {
+					0% {
+						transform: translateX(0);
+					}
+					100% {
+						transform: translateX(-150%);
+					}
+				}
+			}
+		}
+	}
+}

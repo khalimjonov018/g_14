@@ -1,0 +1,97 @@
+.footer {
+  margin-top: 100px;
+  margin-bottom: 93px;
+  .footer__wrapp {
+    display: flex;
+    gap: 60px;
+    @include tablet() {
+      flex-direction: column;
+    }
+    & img{
+      width: 816px;
+      @include tablet() {
+        width: 671px;
+      }
+    }
+    .footer__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include tablet() {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      & h3 {
+        color: #f75c4e;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      & h2 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 6px;
+        margin-bottom: 20px;
+      }
+      & p {
+        color: #575455;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 200% */
+        max-width: 386px;
+        margin-bottom: 50px;
+      }
+      .footer__input {
+        @include tablet() {
+            display: flex;
+            align-items: center;
+            justify-content: center
+          }
+        & input {
+          border: none;
+          padding: 18px 100px 18px 24px;
+          border-radius: 50px;
+          background: #f5f6fb;
+          @include tablet() {
+            padding: 18px 150px 18px 34px;
+          }
+        }
+        & button{
+            position: relative;
+        }
+
+        & button {
+          @include tablet() {
+            position: absolute;
+            right: 330px;
+            padding: 12px 40px;
+          }
+          position: absolute;
+          right: 650px;
+          color: #fff;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          border: 1px solid #1f7cff;
+          transition: all 0.3s ease;
+          padding: 12px;
+          border-radius: 50px;
+          background: #1f7cff;
+        }
+      }
+    }
+  }
+}

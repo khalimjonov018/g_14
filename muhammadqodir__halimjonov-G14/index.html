@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Muhammadqodir Halimjonov</title>
+		<link rel="stylesheet" href="./syle.css" />
+	</head>
+	<body>
+		<center>
+			<form class="form">
+				<h2>Pizza Order</h2>
+
+				<input type="text" placeholder="User name" required />
+				<br />
+				<input type="number" placeholder="Phone number" required />
+				<br />
+				<input
+					type="text"
+					placeholder="User Address
+    "
+					required
+				/>
+				<br />
+				<br />
+				<label for="chosePizza">Dough thickness</label>
+
+				<select id="chosePizza" onchange="pircePizza()" required>
+					<option value="">none</option>
+					<option value="thin">Thin</option>
+					<option value="medium">Medium</option>
+					<option value="thick">thick</option>
+				</select>
+				<br />
+				<br />
+				<label>Size:</label>
+				<label for="chosePizzaSize" id="chosePizzaSize-text">
+					<input type="radio" id="chosePizzaSize" name="pizza" value="size_20" />
+					20sm
+				</label>
+				<label for="chosePizzaSize" id="chosePizzaSize-text">
+					<input type="radio" id="chosePizzaSize" name="pizza" value="size_30"  />
+					30sm
+				</label>
+				<label for="chosePizzaSize" id="chosePizzaSize-text">
+					<input type="radio" id="chosePizzaSize" name="pizza" value="size_35"  />
+					35sm
+				</label>
+				<br />
+				<br />
+				<label class="PizzaTexts">On Pizza:</label>
+				<br />
+				<br />
+				<label for="pizzaProduct">
+					<input type="checkbox" value="pizzaProducts" id="pizzaProduct" />
+					Tomato
+				</label>
+				<br />
+				<label for="pizzaProduct">
+					<input type="checkbox" value="pizzaProducts" id="pizzaProduct" />
+					Turkey meat
+				</label>
+    <br />
+				<label for="pizzaProduct">
+					<input type="checkbox" value="pizzaProducts" id="pizzaProduct" />
+					Olive
+				</label>
+    <br />
+				<label for="pizzaProduct">
+					<input type="checkbox" value="pizzaProducts" id="pizzaProduct" />
+					Pickled Cucumber
+				</label>
+    <br />
+				<label for="pizzaProduct">
+					<input type="checkbox" value="pizzaProducts" id="pizzaProduct" />
+					Mushroom
+				</label>
+    <br />
+				<label for="pizzaProduct">
+					<input type="checkbox" value="pizzaProducts" id="pizzaProduct" />
+					Horse meat
+				</label>
+				<br />
+				<br />
+				<label class="PizzaTexts">Add:</label>
+				<br />
+				<br />
+				<label for="">
+					<input type="checkbox" value="pizzaProducts" name="" />
+					Papper
+				</label>
+				<label for="">
+					<input type="checkbox" value="pizzaProducts" />
+					Sausages
+				</label>
+				<br />
+				<br />
+    <h1>Price: $<span id="priceEl">0</span></h1>
+				<button>Save</button>
+			</form>
+		</center>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

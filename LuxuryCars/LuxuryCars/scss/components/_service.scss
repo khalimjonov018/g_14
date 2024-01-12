@@ -1,0 +1,129 @@
+.services {
+
+    margin: 117px 0;
+
+    @include tablet() {
+        margin: 80px 0;
+    }
+    @include mobile() {
+        margin: 40px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile() {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__image {
+        // width: 817px;
+
+        @include tablet() {
+            width: 456px;
+        }
+        
+        @include mobile() {
+            width: 100%;
+        }
+ 
+        img {
+            width: 120%;
+            height: 100%;
+            object-fit: contain;
+            object-position: left center;
+            margin-top: -50px;
+            margin-left: -75px;
+
+            @include tablet() {
+                margin-left: -20px;
+                margin-top: 0px;
+            }
+            @include mobile() {
+                width: 100%;
+                margin-top: 0;
+                margin-left: 0px;
+            }
+        }
+    }
+
+    &__content {
+        min-width: 491px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 55px;
+
+        @include tablet() {
+            min-width: 316px;
+        }
+        @include mobile() {
+            min-width: 100%;
+            gap: 11px;
+        }
+
+        h2 {
+            @include heading(45px, #21408E);
+
+            @include tablet() {
+                font-size: 35px;
+            }
+            @include mobile() {
+                font-size: 35px;
+            }
+        }
+
+        &-info {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            @include tablet() {
+                gap: 18px; 
+                
+                img {
+                    width: 67px;
+                    height: 51px;
+                }
+            }
+            @include mobile() {
+                gap: 18px; 
+                
+                img {
+                    width: 67px;
+                    height: 51px;
+                }
+            }
+
+            &-text {
+                h3 {
+                    @include heading(26px);
+
+                    @include tablet() {
+                        font-size: 20px;
+                    }
+                    @include mobile() {
+                        font-size: 20px;
+                    }
+                }
+
+                p {
+                    max-width: 354px;
+                    @include pStyle(20px, rgba(0, 0, 0, 0.60));
+                    
+                    @include tablet() {
+                        max-width: 221px;
+                        font-size: 15px;
+                    }
+                    @include mobile() {
+                        max-width: 350px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "roboto", sans-serif;
+}
+
+.nav {
+  margin-top: 40px;
+}
+
+/* header started  */
+
+.container {
+  max-width: 1198px;
+  margin: 0 auto;
+}
+.nav__wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+.logo img {
+  display: block;
+}
+
+.nav__list {
+  display: flex;
+  gap: 70px;
+  list-style: none;
+  padding-top: 11px;
+}
+
+.nav__list-item a {
+  position: relative;
+  text-decoration: none;
+  color: #373737;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 13px 0;
+}
+.nav__list-item:not(:last-child) a::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #717cff;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.nav__list-item.active > a::before,
+.nav__list-item a:hover::before {
+  width: 50%;
+  opacity: 1;
+}
+
+.nav__list-item:last-child a {
+  border-radius: 11px;
+  border: 2px solid #717cff;
+  padding: 11px 33px;
+  transition: all 0.3s ease;
+}
+.nav__list-item:last-child a:hover {
+  background-color: #717cff;
+  color: #fff;
+}
+
+/* header finished */
+
+/* hero started */
+
+.hero{
+  padding: 100px 0 56px;
+  
+  
+  
+}
+.sec__title{
+  padding-top: 40px;
+  background-image: url(./images/EdAtB8jXj6w0M9DE569cpU8q-removebg-preview\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: contain ;
+  background-position: bottom right 128px;
+}
+
+.sec__title h2 {
+  width: 420px;
+  height: 119px;
+  color: #2f2f2f;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-top: 120px;
+}
+.blue__text {
+  color: #717cff;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.sec__title p {
+  width: 602px;
+  height: 65px;
+  color: #7d7d7d;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+  margin-top: 56px;
+  margin-bottom: 50px;
+}
+.btn__two {
+  padding: 12px 104px 12px 34px;
+  border-radius: 11px;
+  background: #717cff;
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  background-image: url(./images/arrow_forward_24px.svg);
+  background-repeat: no-repeat;
+  background-position: center right 43px;
+  transition: all 0.3s ease-in-out;
+}
+.btn__two:hover{
+  background-color: #fafafa;
+  color: #040404;
+  border: 2px solid #717cff;
+  background-position: center right 22px;
+}
+.social{
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin-top: 113px;
+
+
+
+}
+/* hero finished */

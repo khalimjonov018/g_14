@@ -1,0 +1,58 @@
+.asosiy{
+    background-color: rgb(1, 1, 1);
+    width: 360px;
+    color: white;
+    height: 590px;
+    margin: 15px;
+    padding: 8px;
+    border-radius: 16px;
+
+
+}
+.firt_menu{
+    background-color: red;
+    padding: 4px;
+    width: 290px;
+    margin: 18px auto;
+    border-radius: 8px;
+   
+
+
+}
+.second_menu{
+    background-color: rgb(68, 68, 242);
+    padding: 10px;
+    width: 280px;
+    margin: 15px auto;
+    border-radius: 8px;
+
+
+}
+.there_menu{
+    background-color: rgb(68, 68, 242);
+    padding: 10px;
+    width: 280px;
+    margin: 15px auto;
+    border-radius: 8px;
+
+
+}
+.four_menu{
+    background-color: rgb(68, 68, 242);
+    padding: 10px;
+    width: 280px;
+    margin: 15px auto;
+    border-radius: 8px;
+
+
+}
+.first_button,.second_button{
+    background-color: rgb(68, 68, 242);
+   color: white;
+    padding: 5px;
+    /* margin: 4px; */
+    border-color: white;
+    border-radius: 4px;
+    
+
+}

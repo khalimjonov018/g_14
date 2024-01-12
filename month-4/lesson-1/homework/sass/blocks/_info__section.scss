@@ -1,0 +1,120 @@
+.info {
+	margin-top: -230px;
+	margin-bottom: 268px;
+	background-color: #f9b800;
+	overflow: hidden;
+ width: 100%;
+ @include mobile() {
+  margin-top: -100px;
+ }
+	.diagonal__bg-sec {
+		border-right: 100vw solid transparent;
+		border-top: 13.9vw solid #feedbc;
+		overflow: hidden;
+		@include mobile() {
+			border-right: 100vw solid transparent;
+			border-top: 13.9vw solid #feedbc;
+		}
+	}
+	.diagonal__bg {
+		width: 0;
+		height: 0;
+		border-left: 100vw solid transparent;
+		border-bottom: 13.9vw solid #262626;
+
+		@include mobile() {
+			border-left: 100vw solid transparent;
+			border-bottom: 13.9vw solid #262626;
+		}
+	}
+	.info__wrapp {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+  padding: 50px;
+		@include media(1024px, 1400px) {
+			flex-direction: column-reverse;
+			align-items: flex-start;
+		}
+		@include tablet() {
+			flex-direction: column-reverse;
+			align-items: flex-start;
+		}
+		@include mobile() {
+			flex-direction: column-reverse;
+			align-items: flex-start;
+		}
+		.info__content {
+			h2 {
+				width: 550.514px;
+				color: #262626;
+				font-size: 50px;
+				font-weight: 700;
+				@include mobile() {
+					font-size: 36px;
+					width: 335px;
+     padding: 0
+				}
+			}
+			h4 {
+				color: #262626;
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 34px;
+				text-decoration-line: underline;
+				margin-top: 50px;
+				@include mobile() {
+					font-size: 18px;
+					width: 335px;
+					margin-bottom: 12px;
+				}
+			}
+			p {
+  margin-top: 6px;
+				width: 575px;
+				color: #262626;
+				font-size: 20px;
+				font-weight: 400;
+				letter-spacing: 0.4px;
+				@include mobile() {
+					width: 315px;
+				}
+			}
+			.info__btn a {
+				color: #fff;
+				font-size: 24px;
+				font-weight: 700;
+				background-color: #262626;
+				display: flex;
+				margin-top: 40px;
+				width: 330px;
+				padding: 22px 40px 24px 40px;
+				justify-content: space-between;
+				align-items: center;
+				border-radius: 5000px;
+				background-image: url(/img/info__arrow-icon.svg);
+				background-repeat: no-repeat;
+				background-position: center right 80px;
+				transition: all 0.3s ease;
+				@include mobile() {
+     background-position: center right 90px;
+					width: 335px;
+     adding: 16.923px 38.462px 18.462px 38.462px;
+				}
+				&:hover {
+					background-position: center right 50px;
+					box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.767);
+     @include mobile() {
+      background-position: center right 50px;
+
+     }
+				}
+			}
+		}
+		.info__bg img {
+			@include mobile() {
+				width: 330px;
+			}
+		}
+	}
+}

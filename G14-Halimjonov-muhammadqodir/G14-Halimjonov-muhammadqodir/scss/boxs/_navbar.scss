@@ -1,0 +1,108 @@
+.header {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  .navbar__wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar__logo {
+      z-index: 1000;
+      padding: 0 50px;
+    }
+    #checkbox__navbar {
+      display: none;
+    }
+    @include mobile(){
+        #checkbox__navbar:checked + .navbar__list {
+            transform: translateX(0);
+          }
+    }
+    .bars {
+      display: none;
+      @include mobile() {
+        display: block;
+        position: absolute;
+        top: 45px;
+        z-index: 1000;
+      }
+    }
+    .navbar__list {
+      display: flex;
+      position: relative;
+      align-items: center;
+      gap: 58px;
+
+      .navbar__inner-btn {
+        display: none;
+        & a {
+          color: #fff;
+          text-align: center;
+          font-family: "Space Mono" sans-serif;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 25px; /* 166.667% */
+          background: #fcb72b;
+          padding: 14px 39px;
+          border: 1px solid #fcb72b;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: #fff;
+            color: #000;
+          }
+        }
+      }
+      @include mobile() {
+        transform: translateX(-100%);
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 35%;
+        height: 100vh;
+        background-color: #f7dfae;
+        padding: 100px 40px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        z-index: 999;
+      }
+      .navbar__list-item a {
+        color: #939caa;
+        font-family: "Space Mono" sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px; /* 166.667% */
+        @include mobile() {
+          color: #000;
+        }
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+    .navbar__btn {
+      & a {
+        color: #fff;
+        text-align: center;
+        font-family: "Space Mono" sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px; /* 166.667% */
+        background: #fcb72b;
+        padding: 14px 39px;
+        border: 1px solid #fcb72b;
+        transition: all 0.3s ease;
+        @include mobile() {
+          display: none;
+        }
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
+      }
+    }
+  }
+}

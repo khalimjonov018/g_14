@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+.nav {
+  margin-top: 30px;
+}
+
+/* Header started */
+.container {
+  max-width: 1198px;
+  margin: 0 auto;
+}
+.nav__wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  display: block;
+}
+
+.nav__list {
+  display: flex;
+  gap: 71px;
+  list-style: none;
+  padding-top: 11px;
+}
+
+.nav__list-item a {
+  position: relative;
+  text-decoration: none;
+  color: #373737;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.nav__list-item:not(:last-child) a::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #717cff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav__list-item.active > a::before,
+.nav__list-item a:hover::before {
+  width: 50%;
+  opacity: 1;
+}
+
+.nav__list-item:last-child a {
+  border-radius: 11px;
+  border: 2px solid #717cff;
+  padding: 12px 35px;
+  color: #505050;
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: all 0.3s ease;
+}
+.nav__list-item:last-child a:hover {
+  background: #717cff;
+  color: #fff;
+}
+
+/* header finished */
+
+/* hero started */
+
+.text__container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.text__container h2 {
+  max-width: 420px;
+  height: 119px;
+  color: #2f2f2f;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-top: 140px;
+}
+.blue__text {
+  color: #717cff;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.text__container p {
+  width: 602px;
+  height: 65px;
+  color: #7d7d7d;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+  margin-top: 65px;
+}
+.text__container a{
+  border: 1px solid #717cff;
+  border-radius: 11px;
+  background: #717cff;
+  padding: 15px 40px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+/* hero finished */

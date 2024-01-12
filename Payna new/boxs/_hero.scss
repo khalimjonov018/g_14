@@ -1,0 +1,84 @@
+.hero {
+  .hero__wrapp {
+    display: flex;
+    @include tablet() {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    .hero__controlds {
+      & h2 {
+        margin-top: 142px;
+        color: #000;
+        font-family: "Poppins" sans-serif;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @include tablet() {
+          max-width: 453px;
+        }
+        @include mobile() {
+          color: #000;
+          font-family: "Poppins" sans-serif;
+          font-size: 38px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          max-width: 350px;
+        }
+      }
+      & p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: #575455;
+        font-family: "Poppins" sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 200% */
+        width: 423px;
+        @include tablet() {
+          max-width: 442px;
+        }
+        @include mobile() {
+          color: #575455;
+          font-family: "Poppins" sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px; /* 200% */
+          max-width: 319px;
+        }
+      }
+      & a {
+        padding: 12px 44px;
+        border-radius: 50px;
+        background: #1f7cff;
+        color: #fff;
+        text-align: center;
+        font-family: "Poppins" sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border: 1px solid #1f7cff;
+        transition: all 0.3s ease;
+        &:hover {
+          color: #000;
+          background-color: white;
+        }
+      }
+    }
+    .hero__bg img {
+      margin-top: 90px;
+      margin-bottom: 90px;
+      @include tablet() {
+        display: none;
+      }
+      @include mobile() {
+        display: none;
+      }
+    }
+  }
+}

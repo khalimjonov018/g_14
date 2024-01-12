@@ -1,0 +1,65 @@
+@mixin tablet() {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin media($min, $max) {
+    @media screen and (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin logo($color: #000, $size: 24px) {
+    color: $color;
+    font-family: 'Roboto', sans-serif;
+    font-size: $size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    // @include mobile() {
+    //     font-size: 10px;
+    // }
+}
+
+@mixin pStyle($size: 24px, $color: #000) {
+    color: $color;
+    font-family: 'Roboto', sans-serif;
+    font-size: $size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    // @include mobile() {
+    //     font-size: 10px;
+    // }
+}
+
+@mixin heading($size: 32px, $color: #000) {
+    color: $color;
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: $size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+@mixin nav__line-after() {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #F1BC00;
+
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    transition: all 0.4s ease;
+}

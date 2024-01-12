@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.picture{
+    /* position: absolute; */
+    width: 350px;
+    height: 350px;
+    animation-name: picture;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-top: 320px;
+    margin-left: 40%;
+    
+    
+    
+    
+}
+@keyframes picture {
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+       transform: rotate(360deg);
+    }
+    
+}

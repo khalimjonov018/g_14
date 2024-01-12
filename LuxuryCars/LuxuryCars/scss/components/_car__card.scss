@@ -1,0 +1,125 @@
+.car__card {
+    margin: 148px 0 83px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            @include heading(45px);
+            margin-bottom: 70px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 21px;
+
+        @include media(0px, 1320px) {
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .card__wrap {
+            position: relative;
+        }
+
+        &-item {
+            overflow: hidden;
+            max-width: 310px;
+            border-radius: 21px 21px 0px 0px;
+            background: #CBC9C2;
+            box-shadow: 5px 8px 19px -2px rgba(0, 0, 0, 0.44);
+
+            .card__title {
+                height: 167px;
+                border-radius: 21px 21px 0px 0px;
+                padding: 25px 40px 0;
+                background: #FAF5F8;
+
+                display: flex;
+                justify-content: flex-start;
+
+                h3 {
+                    @include heading(34px, #21408E);
+                    font-family: 'Bodoni MT', sans-serif;
+                }
+            }
+
+            &>img {
+                margin-top: 25px;
+                margin-bottom: -50px;
+            }
+
+            .audi1 {
+                margin-top: 67px;
+                object-position: -8px -10px;
+            }
+
+            .audi2 {
+                margin-top: 35px;
+                object-position: -25px 5px;
+            }
+
+            .range {
+                margin-top: 60px;
+                object-position: -25px -20px;
+            }
+
+            .card__car-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                border-radius: 21px 21px 0px 0px;
+                padding-inline: 25px;
+                padding-bottom: 35px;
+                background: #FFF;
+
+                &>span:nth-child(1) {
+                    width: 100%;
+                    @include pStyle(20px);
+                    margin: 5px 0 15px;
+                }
+
+                .amenities {
+                    @include pStyle(15px);
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 15px;
+
+                    h3 {
+                        display: flex;
+                        align-items: center;
+                        gap: 7px
+                    }
+                }
+
+                h4 {
+                    @include pStyle(25px, #21408E);
+                    margin-top: 23px;
+                    text-align: center;
+                }
+
+                .card__car-btn {
+                    position: absolute;
+                    bottom: 0;
+                    border-radius: 12px;
+                    background: #21408E;
+                    padding: 7px 55px;
+                    margin-top: 10px;
+                    margin-bottom: -20px;
+
+                    a {
+                        @include pStyle(22px, white);
+                    }
+                }
+            }
+        }
+    }
+}

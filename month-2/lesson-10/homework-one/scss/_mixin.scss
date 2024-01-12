@@ -1,0 +1,43 @@
+@mixin forlogo($forCOLOR: #a06056, $forFONTS: "Merriweather", $forFSIZE: 34px) {
+  color: var(--Terracotta, #a06056);
+  font-family: $forFONTS;
+  font-size: $forFSIZE;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+@mixin litterTEXT($lTEXT: #706458, $lTEXTfonts: "Varta", $LtrxtSIZE: 18px) {
+  color: #706458;
+  font-family: $lTEXTfonts;
+  font-size: $LtrxtSIZE;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+@mixin bigTEXT() {
+    color: $forCOLOR;
+  font-family: $forFONTS;
+  $forFSIZE: 50px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 70px; 
+  letter-spacing: -0.4px;
+}
+@mixin mobile() {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
